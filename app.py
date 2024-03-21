@@ -1,8 +1,6 @@
 from secrets import choice as choice_char
 from string import ascii_letters, digits, punctuation
 from pyperclip import copy as copy_token
-from os import system
-from time import sleep
 
 
 def generate_token() -> str:
@@ -18,9 +16,4 @@ def generate_token() -> str:
 
 
 if __name__ == '__main__':
-    print(f"{' SIMPLE TOKEN GENERATOR ':#^50}")
     token = generate_token()
-    sleep(2)
-    system("cls")
-    print("YOUR TOKEN HAS BEEN GENERATED AND IN YOUR CLIPBOARD!")
-    system("pause")
